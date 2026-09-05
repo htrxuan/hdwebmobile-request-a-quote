@@ -1,0 +1,55 @@
+.hdraq-quote-box {
+    margin: 1.5em 0;
+    padding: 1.5em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.hdraq-honeypot {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.hdraq-request-form p {
+    margin: 0 0 1em;
+}
+
+.hdraq-request-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.4em;
+}
+
+.hdraq-request-form input,
+.hdraq-request-form textarea {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    padding: 0.5em 0.65em;
+    font-size: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.hdraq-notice {
+    padding: 1em;
+    border-radius: 4px;
+    margin: 1.5em 0;
+}
+
+.hdraq-notice.hdraq-success {
+    background: #edfaef;
+    border: 1px solid #7ad03a;
+}
+
+.hdraq-quote-view table {
+    margin-bottom: 1.5em;
+}
+
+.hdraq-accept-form {
+    margin-top: 1em;
+}
