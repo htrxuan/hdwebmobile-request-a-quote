@@ -16,8 +16,8 @@ Let customers request a custom price on any product -- only your own signed-off 
 
 HDWebmobile Request a Quote adds a "Request a custom quote" form to every product page. The store reviews each request under WooCommerce > HDWebmobile > Request a Quote, sets a price, and the customer is emailed a link to view and accept it -- accepting adds the item to their cart at exactly the quoted price.
 
-= Why this plugin exists =
-A competing "Request a Quote" plugin had an unauthenticated Missing Authorization vulnerability (CVE-2026-84238, CVSS 9.8, CWE-862): its quote-management endpoints performed no capability or ownership check at all, letting an unauthenticated attacker view or manipulate any customer's quote and pricing data. This plugin closes that exact vulnerability class by construction:
+= Security by design =
+A serious class of bug in quote tools is quote-management endpoints that perform no capability or ownership check at all (CWE-862, Missing Authorization), letting an unauthenticated attacker view or manipulate any customer's quote and pricing data. This plugin closes that vulnerability class by construction:
 
 * Every quote is identified, on the customer-facing side, only by a 192-bit random token generated server-side at creation -- never by its plain, sequential database id. There is no customer-facing code path that can look a quote up by id.
 * A logged-in customer's "My Quote Requests" list is scoped by `get_current_user_id()` at the database query itself, so it is structurally impossible for one customer to see another's quotes, regardless of what id or token they might guess.
