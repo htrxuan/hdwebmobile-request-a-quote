@@ -36,6 +36,9 @@ A serious class of bug in quote tools is quote-management endpoints that perform
 * One product per quote request -- no multi-item "quote basket" in this version
 * No admin-configurable email templates; notifications are sent as plain text
 
+= Enjoying this plugin? =
+If it helps your site, please consider [leaving an honest review on WordPress.org](https://wordpress.org/support/plugin/hdwebmobile-request-a-quote/reviews/#new-post) -- it helps other WordPress users find it. Found a problem or have an idea? Please [open a support topic](https://wordpress.org/support/plugin/hdwebmobile-request-a-quote/) first so it can be fixed.
+
 == Installation ==
 
 1. Upload the plugin files to the `/wp-content/plugins/hdwebmobile-request-a-quote` directory, or install the plugin through the WordPress plugins screen directly.
