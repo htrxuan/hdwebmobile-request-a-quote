@@ -157,6 +157,13 @@ final class HDRAQ_Hub
             array('name' => 'Wishlist', 'file' => 'hdwebmobile-wishlist/hdwebmobile-wishlist.php', 'description' => 'A wishlist that works with block-based Shop pages and guest browsing.'),
         );
         ?>
+        <?php if (!is_plugin_active('hdwebmobile-store-guardian/hdwebmobile-store-guardian.php')) : ?>
+            <div class="hdwebmobile-store-guardian-promo" style="margin:1em 0;padding:1em 1.25em;background:#fff;border:1px solid #dcdcde;border-left:4px solid #1a7f37;border-radius:4px;max-width:800px;">
+                <p style="margin:0 0 .4em;"><strong>Store Guardian: know within minutes when your checkout breaks</strong></p>
+                <p style="margin:0 0 .8em;">A paid HDWebmobile plugin that places a real test order every hour and right after every update, alerts you by email, Slack or Telegram when checkout fails, names the update that caused it, and rolls that plugin back in one click.</p>
+                <p style="margin:0;"><a href="https://hdwebmobile.com/plugins/hdwebmobile-store-guardian/?utm_source=wp-admin&#038;utm_medium=hub&#038;utm_campaign=store-guardian" target="_blank" rel="noopener noreferrer" class="button">Learn more</a></p>
+            </div>
+        <?php endif; ?>
         <p style="max-width:800px;margin:1em 0;">A suite of focused WooCommerce plugins by HDWebmobile -- each one does one job well, with no bloat. Below is every plugin in the family; the tabs above are the ones currently installed here.</p>
         <div class="hdwebmobile-sibling-plugins" style="padding:1.5em;background:#fff;border:1px solid #dcdcde;border-radius:4px;max-width:800px;">
             <table class="widefat striped">
